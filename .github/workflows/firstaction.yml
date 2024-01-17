@@ -17,6 +17,7 @@ on:
 # Env for all jobs
 env:
   name: Bobby
+  name2: bad boy Bob
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,7 +33,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, $name!
+        run: echo Hello, $name and $name2!
 
   # This job contains a single job called ""
   pull_requests_only:
