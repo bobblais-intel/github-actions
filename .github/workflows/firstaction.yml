@@ -36,7 +36,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, $name and $name2!
       - name: wait for a bit
-        run: sleep 15;echo sleep done
+        run: echo start sleep;sleep 600;echo sleep done
 
   # This job contains a single job called ""
   pull_requests_only:
